@@ -1,0 +1,21 @@
+class Codec{
+constructor(){
+this.delimiter="/";
+}
+encoder(strs){
+if(strs === 0) return null;
+return strs.join(this.delimiter);
+
+}
+decoder(s){
+if(s=== null) return [];
+return s.split(this.delimiter);
+
+}
+}
+const codec = new Codec();
+const strs=["Hello","World"];
+const encoded=codec.encoder(strs);
+console.log(+encoded);
+const decoded=codec.decoder(encoded);
+console.log(+decoded);
