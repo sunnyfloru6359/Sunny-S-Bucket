@@ -7,7 +7,7 @@ public class trainglepattern {
 
 	public void triangle() {
 
-		int rows=5;
+		int rows=10;
 
 		for(int i=rows;i>=1;i--) {
 
